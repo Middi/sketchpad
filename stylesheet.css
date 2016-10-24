@@ -1,0 +1,31 @@
+* {
+		margin: 0 0 0 0;
+		padding: 0;
+		font-family: 'Source Code Pro', monospace;
+		background: #183446;
+}
+
+
+/* RESPONSIVE SECTION */
+
+#container {
+		width: 90%;
+		height: 90%;
+		border: 5px solid black;
+		position: absolute;
+		padding: 0;
+		margin: 5% 5%;
+}
+
+h1 {
+		color: rgba(0, 0, 0, 0.4);
+}
+
+h1:hover {
+		color: rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+		color: rgba(0, 0, 0, 0.4);
+		padding-bottom: 1em;
+}
