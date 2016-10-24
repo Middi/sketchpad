@@ -4,8 +4,4 @@ $(document).ready(function() {
 
     console.log(numberDivs);
 
-
-
-
-
 });
