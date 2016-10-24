@@ -1,31 +1,60 @@
 * {
-		margin: 0 0 0 0;
-		padding: 0;
+		padding: 0, 0, 0, 0;
+		margin: 0, 0, 0, 0;
+
 		font-family: 'Source Code Pro', monospace;
-		background: #183446;
+		background-color: rgba(242,93,89,1);
 }
 
 
 /* RESPONSIVE SECTION */
 
+#wrap {
+
+	height: 100%;
+	width: 100%;
+
+
+
+
+}
 #container {
-		width: 90%;
-		height: 90%;
-		border: 5px solid black;
-		position: absolute;
-		padding: 0;
-		margin: 5% 5%;
+
+		border: 2px solid black;
+		
+		display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+	 width: 704px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 margin-top: 100px;
+
+
+
 }
 
-h1 {
-		color: rgba(0, 0, 0, 0.4);
+
+
+
+
+.cell {
+
+	display: flex;
+	background-color: rgba(220,220,205,1);
+	margin: 2px;
+	-webkit-flex: 1 1 0;
+   flex: 1 1 0;
+	 overflow: hidden;
+	 height: 40px;
+	 width: 40px;
 }
 
-h1:hover {
-		color: rgba(0, 0, 0, 0.5);
-}
 
-h4 {
-		color: rgba(0, 0, 0, 0.4);
-		padding-bottom: 1em;
+.cell:hover {
+
+	background-color: rgba(219,84,80,1);
+
+
 }
