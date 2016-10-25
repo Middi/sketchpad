@@ -11,7 +11,7 @@ function createGrid() {
 
   if('.cell'.length > 0) {
 
-    $('.cell').remove();
+    $(#container).empty()
 
   }
 
