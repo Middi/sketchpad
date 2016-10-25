@@ -27,4 +27,14 @@ $(document).ready(function() {
     }
 
 
+    $('.cell').mouseenter(function () {
+       $(this).addClass('highlight');
+
+   });
+
+
+
+
+
+
 });
