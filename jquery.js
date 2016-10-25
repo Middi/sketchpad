@@ -1,30 +1,51 @@
+
 $(document).ready(function() {
 
-  var elementCount = "";
+createGrid();
 
-  var columnCount = "";
+  });
 
-//   function tableBuilder() {
-//
-//   if('.column').length < 16 {
-//
-//
-//
-//
-// }
+function createGrid() {
+
+  do{$('.cell').remove;
+}
+
+while(true == false);
+
+var boxes = prompt("select a grid between 2 - 128?","0");
 
 
-    for(elementCount = 1; elementCount < 17; elementCount++) {
+var x = parseInt(boxes);
+
+  if(x > 128) {
+
+    alert("must be between 1-128");
+  }
+
+    else {
+
+
+    };
+
+    for(elementCount = 0; elementCount < x; elementCount++) {
 
       $('#container').append('<div class="col"></div>');
 
+
+
     }
 
-    for(columnCount = 1; columnCount < 17; columnCount++) {
+    for(columnCount = 0; columnCount < x; columnCount++) {
 
       $('.col').append('<div class="cell"></div>');
 
+      $(".cell").width(572/x);
+      $(".cell").height(572/x);
     }
+
+
+
+
 
 
     $('.cell').mouseenter(function () {
@@ -33,8 +54,20 @@ $(document).ready(function() {
    });
 
 
+};
 
 
 
 
-});
+
+function doClearButton() {
+  $(".cell").removeClass('highlight');
+
+};
+
+
+
+function reset() {
+  createGrid();
+
+};
