@@ -1,16 +1,20 @@
 
 $(document).ready(function() {
 
+
 createGrid();
 
   });
 
+
 function createGrid() {
 
-  do{$('.cell').remove;
-}
+  if('.cell'.length > 0) {
 
-while(true == false);
+    $('.cell').remove();
+
+  }
+
 
 var boxes = prompt("select a grid between 2 - 128?","0");
 
@@ -60,14 +64,12 @@ var x = parseInt(boxes);
 
 
 
-function doClearButton() {
+function clearButton() {
   $(".cell").removeClass('highlight');
 
 };
 
-
-
-function reset() {
+function resetButton() {
   createGrid();
 
 };
