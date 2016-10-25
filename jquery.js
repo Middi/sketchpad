@@ -11,7 +11,7 @@ function createGrid() {
 
   if('.cell'.length > 0) {
 
-    $(#container).empty()
+    $(#container).remove()
 
   }
 
@@ -29,7 +29,7 @@ var x = parseInt(boxes);
     else {
 
 
-    };
+    }
 
     for(elementCount = 0; elementCount < x; elementCount++) {
 
@@ -58,7 +58,7 @@ var x = parseInt(boxes);
    });
 
 
-};
+}
 
 
 
@@ -67,9 +67,9 @@ var x = parseInt(boxes);
 function clearButton() {
   $(".cell").removeClass('highlight');
 
-};
+}
 
 function resetButton() {
   createGrid();
 
-};
+}
