@@ -2,7 +2,6 @@
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     font-family: 'Cabin Sketch', cursive;
-    background-color: #c51110;
 }
 
 
@@ -186,6 +185,12 @@
 
 */
 
+body {
+
+
+    background-color: #c51110;
+}
+
 h1 {
     color: #1d1d1d;
     text-align: center;
@@ -195,7 +200,7 @@ h1 {
 }
 
 #container {
-    /*background-color: #e9e7e8;*/
+    background-color: #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,7 +218,8 @@ h1 {
 }
 
 .highlight {
-    background-color: #333333;
+    background-color: #e9e7e8;
+    opacity: 1;
 }
 
 #wrap {

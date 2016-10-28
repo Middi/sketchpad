@@ -63,17 +63,27 @@ function draw()
     {
         if ($('#color :selected').val() === '0')
         {
+            $(this).css('opacity', $(this).css('opacity')+1);
             $(this).css('background', 'black');
         }
         else if ($('#color :selected') .val() === '1')
         {
+            $(this).css('opacity', $(this).css('opacity')+1);
             $(this).css('background', randomColor());
         }
 
         else if ($('#color :selected') .val() === '2')
         {
-            $(this).css('background-color', 'rgba(222,222,222,0.2)');
+            $(this).css('opacity', $(this).css('opacity')-0.2);
         }
+
+        else if ($('#color :selected') .val() === '3')
+        {
+
+           $(this).addClass('highlight');
+
+        }
+
     });
 }
 
@@ -99,7 +109,7 @@ function clearButton() {
 }
 
 function removeCell() {
-   $('#container').empty()
+   $('#container').empty();
 }
 
 
