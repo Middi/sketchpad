@@ -56,40 +56,45 @@ function createGrid() {
 
 
 
-function draw() {
+function draw()
 
+{
+    $('.cell').mouseenter(function ()
+    {
+        if ($('#color :selected').val() === '0')
+        {
+            $(this).css('background', 'black');
+        }
+        else if ($('#color :selected') .val() === '1')
+        {
+            $(this).css('background', randomColor());
+        }
 
-        $('.cell').mouseenter(function() {
-            $(this).addClass('highlight');
-
-        });
-
-
+        else if ($('#color :selected') .val() === '2')
+        {
+            $(this).css('background-color', 'rgba(222,222,222,0.2)');
+        }
+    });
 }
 
 
 
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
+function randomColor() {
     var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    for (var i = 0; i < 3; i++)
+    {
+        color += ('0' + (Math.random() * 256 | 0) .toString(16)) .substr( - 2);
     }
     return color;
-
-    $('.cell').mouseenter(function() {
-        $(this).css('background-color', 'color');
-
-    });
-
 }
+
 
 
 
 
 function clearButton() {
-    $(".cell").removeClass('highlight');
+    $(".cell").css('background', '#e9e7e8');
 
 }
 
