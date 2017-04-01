@@ -5,190 +5,14 @@
 }
 
 
-/*RESPONSIVE SECTION*/
+body {background-color: #c51110}
 
 
-/*
-
-@media screen and (max-width: 350px) and (min-width: 100px)  {
-
-    h1 {
-
-        font-size: 1.4em;
-
-    }
-
-		.cell {
-
-			height: 13px;
-    	width: 13px;
-			margin: 1px;
-
-	}
-
-	#container {
-
-		width: 240px;
-
-	}
-
-	#wrap {
-
-		width: 300px;
-
-	}
-
-	#left-dial , #right-dial {
-
-			width: 30px;
-			height: 30px;
-
-		}
-
-
-}
-
-
-
-@media screen and (max-width: 500px) and (min-width: 351px)  {
-
-    h1 {
-
-        font-size: 2em;
-
-    }
-
-		.cell {
-
-			height: 15px;
-    	width: 15px;
-			margin: 1px;
-
-	}
-
-	#container {
-
-		width: 272px;
-
-	}
-
-	#wrap {
-
-		width: 350px;
-
-	}
-
-	#left-dial , #right-dial {
-
-			width: 40px;
-			height: 40px;
-
-		}
-
-
-}
-
-
-
-
-@media screen and (max-width: 800px) and (min-width: 501px)  {
-
-    h1 {
-
-        font-size: 3em;
-
-    }
-
-		.cell {
-
-			height: 20px;
-    	width: 20px;
-			margin: 1px;
-
-	}
-
-	#container {
-
-		width: 352px;
-
-	}
-
-	#wrap {
-
-		width: 470px;
-
-	}
-
-	#left-dial , #right-dial {
-
-	width: 60px;
-			height: 60px;
-
-		}
-
-
-}
-
-*/
-
-@media screen and (max-width: 3800px) and (min-width: 101px) {
-    h1 {
-        font-size: 3em;
-    }
-    #container {
-        width: 572px;
-    }
-    #left-dial, #right-dial {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-
-/* @media screen and (max-width: 3000px) and (min-width: 1801px)  {
-
-    h1 {
-
-        font-size: 4em;
-    }
-
-		.cell {
-
-			height: 40px;
-    	width: 40px;
-			margin: 2px;
-
-	}
-
-	#container {
-
-		width: 704px;
-
-	}
-
-	#wrap {
-
-		width: 900px;
-
-	}
-
-	#left-dial , #right-dial {
-
-	    width: 120px;
-	    height: 120px;
-
-		}
-
-
-}
-
-
-*/
-
-body {
-
-
-    background-color: #c51110;
+#wrap {
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 h1 {
@@ -200,80 +24,121 @@ h1 {
 }
 
 #container {
-    background-color: #000000;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    margin: 0 auto;
+    max-width: 572px;
 }
 
 .cell {
     background-color: #e9e7e8;
+    max-width: 30px;
+    max-height: 30px
 }
 
-.highlight {
-    background-color: #e9e7e8;
-    opacity: 1;
-}
-
-#wrap {
-    width: 700px;
-    position: relative;
-    margin: auto;
-}
 
 #bottom-element {
 
-  width: 700px;
-  position: absolute;
+    width: 700px;
     text-align: center;
-    margin-left: auto;
-
-    margin-right: auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #left-dial, #right-dial {
+    font-family: Helvetica, Arial, sans-serif;
     background-color: #e9e7e8;
-    border-radius: 99px;
+    border-radius: 50%;
     border: dotted 4px #cccccc;
-    margin-top: 30px;
-    line-height: 90px;
-    color: #555555;
+    height: 80px;
+    width: 80px;
+    color: #1c1c1c;
     cursor: pointer;
-
 }
 
-#left-dial {
-
-
-     display: inline-block;
-    margin-right: 200px
-}
-
-#right-dial {
-
-
-    display: inline-block;
-
-}
-
-#color {
-
-    display: inline-block;
-    margin-right: 200px;
-
-
+.table-cell {
+    padding: 32px 0;
 }
 
 select {
-
     background-color: white;
     width: 100px;
+}
+
+
+@media only screen and (max-width: 770px) {
+
+.cell {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+#container {max-width: 440px}
+
+#bottom-element {max-width: 440px}
 
 }
+
+
+@media only screen and (max-width: 500px) {
+
+.cell {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+#container {max-width: 352px}
+
+#bottom-element {max-width: 352px}
+
+#left-dial, #right-dial {
+    font-size: 16px;
+    line-height:18px;
+    height: 60px;
+    width: 60px;
+}
+
+.table-cell {
+    padding: 14px 0;
+}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+h1 {
+    color: #1d1d1d;
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0 40px;
+    position: relative;
+}
+
+
+.cell {
+    max-width: 12px;
+    max-height: 12px;
+}
+
+#container {max-width: 264px}
+
+#bottom-element {max-width: 264px}
+
+#left-dial, #right-dial {
+    font-size: 16px;
+    line-height:18px;
+    height: 60px;
+    width: 60px;
+}
+
+.table-cell {
+    padding: 14px 0;
+}
+
+}
+
+
