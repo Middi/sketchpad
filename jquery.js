@@ -1,21 +1,16 @@
 $(document).ready(function () {
-    createGrid();
-});
 
-
-function createGrid() {
+    function createGrid() {
 
     var boxes = prompt("select a grid between 2 - 128?", "0");
-
 
     var x = parseInt(boxes);
 
     if (x > 128) {
         alert("must be between 1-128");
-    } else {}
+    }
 
     for (elementCount = 0; elementCount < x; elementCount++) {
-
         $('#container').append('<div class="col"></div>');
     }
 
@@ -32,17 +27,16 @@ function createGrid() {
 
 function draw() {
 
-    $('.cell').mouseenter(function ()
-
-        {
+    $('.cell').mouseenter(function () {
             if ($('#color :selected').val() === '0') {
                 $(this).css('background', 'black');
-            } else if ($('#color :selected').val() === '1') {
+            }
+            else if ($('#color :selected').val() === '1') {
                 $(this).css('background', randomColor());
-            } else if ($('#color :selected').val() === '2') {
+            }
+            else if ($('#color :selected').val() === '2') {
                 $(this).css('background', '#e9e7e8');
             }
-
         });
 }
 
@@ -61,13 +55,16 @@ function clearButton() {
     $(this).css('background-color', 'opacity', 1);
 }
 
-
 function removeCell() {
     $('#container').empty();
 }
-
 
 function resetButton() {
     removeCell();
     createGrid();
 }
+
+    createGrid();
+});
+
+
