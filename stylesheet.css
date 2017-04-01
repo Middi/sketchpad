@@ -1,12 +1,10 @@
 * {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
     font-family: 'Cabin Sketch', cursive;
 }
 
-
 body {background-color: #c51110}
-
 
 #wrap {
     max-width: 700px;
@@ -18,9 +16,7 @@ body {background-color: #c51110}
 h1 {
     color: #1d1d1d;
     text-align: center;
-    padding: 0;
     margin: 30px;
-    position: relative;
 }
 
 #container {
@@ -37,7 +33,6 @@ h1 {
 
 
 #bottom-element {
-
     width: 700px;
     text-align: center;
     margin: 30px auto;
@@ -57,9 +52,7 @@ h1 {
     cursor: pointer;
 }
 
-.table-cell {
-    padding: 32px 0;
-}
+.table-cell {padding: 32px 0}
 
 select {
     background-color: white;
@@ -99,9 +92,7 @@ select {
     width: 60px;
 }
 
-.table-cell {
-    padding: 14px 0;
-}
+.table-cell {padding: 14px 0}
 
 }
 
@@ -110,12 +101,8 @@ select {
 
 
 h1 {
-    color: #1d1d1d;
     font-size: 24px;
-    text-align: center;
-    padding: 0;
     margin: 10px 0 40px;
-    position: relative;
 }
 
 
@@ -135,9 +122,7 @@ h1 {
     width: 60px;
 }
 
-.table-cell {
-    padding: 14px 0;
-}
+.table-cell {padding: 14px 0}
 
 }
 
