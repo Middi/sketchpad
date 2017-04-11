@@ -1,4 +1,4 @@
-# (sketchpad)[https://richardmiddleton.me/sketchpad/]
+# (https://richardmiddleton.me/sketchpad/)[sketchpad]
 Sketchpad App jQuery
 
 Create a sketchpad app in jQuery for The Odin Project.
